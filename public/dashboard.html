@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div>
+        <table class="subscriptionTable">
+            <caption class="tableHeading">Subscribers Details</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Subscription Type</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Payment Status</th>
+                    <th>Last Payment Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="subscriberTableBody">
+            </tbody>
+        </table>
+    </div>
+    <div class="modal-container">
+        <button class="btn" data-toggle="modal" data-target="#addModal" id="add-btn">Add Subscriber</button>
+    </div>
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="closeAdd">&times;</span>
+            <h2 class="modal-header">Add Subscriber</h2>
+            <form id="subscriberForm">
+                <div class="form-group">
+                    <label for="sid">Id</label>
+                    <input type="text" id="sid" required>
+                </div>
+                <div class="form-group">
+                    <label for="stype">Subscription Type</label>
+                    <input type="text" id="stype" required>
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="text" id="startDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="endDate">End Date</label>
+                    <input type="text" id="endDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="pStatus">Payment Status</label>
+                    <input type="text" id="pStatus" required>
+                </div>
+                <div class="form-group">
+                    <label for="lpDate">Last Payment Date</label>
+                    <input type="text" id="lpDate" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="editModal" class="editmodal">
+        <div class="modal-content">
+            <span class="closeEdit">&times;</span>
+            <h2 class="modal-header">Edit Subscriber</h2>
+            <form id="editForm">
+                <div class="form-group">
+                    <label for="sid">Id</label>
+                    <input type="text" id="e_sid" required>
+                </div>
+                <div class="form-group">
+                    <label for="stype">Subscription Type</label>
+                    <input type="text" id="e_stype" required>
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input type="text" id="e_startDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="endDate">End Date</label>
+                    <input type="text" id="e_endDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="pStatus">Payment Status</label>
+                    <input type="text" id="e_pStatus" required>
+                </div>
+                <div class="form-group">
+                    <label for="lpDate">Last Payment Date</label>
+                    <input type="text" id="e_lpDate" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./dashboard.js"></script>
+</body>
+</html>
