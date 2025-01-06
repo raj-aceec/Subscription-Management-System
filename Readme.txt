@@ -1,22 +1,44 @@
-### Subscription CRUD
+# Subscription Management System
+
+This is a **Subscription Management System** built using **Node.js** and **Express.js** with a fully interactive frontend. The application allows authenticated users to manage subscriber details through a clean and intuitive user interface.
+
+---
+
+## Features
 
 ### Frontend
-- Implemented a login page for the user.
-- Once the User is loggined it will redirect to the user dashboard.
-- The user able to fetch the details of subscribers,
-                   add the details of new subscribers,
-                   edit the details of existing subscribers and
-                   deleting the existing subscribers.
-### Backend
-- Authentication for user login
-- CRUD operations for subscribers
-1. GET All subscribers details
-2. GET a Specific subscriber details by ID
-3. POST (Add New subscriber details)
-4. PUT (Update subscriber details by ID)
-5. DELETE (Delete subscriber details by ID)
+- **User Authentication:**
+  - Implemented a login page for users.
+  - Authenticated users are redirected to their personalized dashboard.
+- **Dashboard Functionalities:**
+  - Fetch and display a list of all subscribers.
+  - Add details of new subscribers.
+  - Edit details of existing subscribers.
+  - Delete subscriber records.
 
-### NOT DONE
-- user session management
-- Doesnt added the search feature for finding specific subscriber 
-  but added the route for finding specific subscriber details
+### Backend
+- **User Authentication:**
+  - Secure login system to verify user credentials.
+- **Subscriber CRUD Operations:**
+  - **GET:** Fetch all subscriber details.
+  - **GET by ID:** Retrieve details of a specific subscriber using their unique ID.
+  - **POST:** Add new subscriber details.
+  - **PUT:** Update existing subscriber details using their ID.
+  - **DELETE:** Remove subscriber details from the system using their ID.
+
+---
+
+## Prerequisites
+
+- **Node.js** installed on your system.
+- A database (e.g., **MySQL**, **MongoDB**, or **PostgreSQL**) configured for storing subscriber data.
+- A modern web browser for accessing the application.
+
+---
+
+## Installation and Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/subscription-management-system.git
+cd subscription-management-system
